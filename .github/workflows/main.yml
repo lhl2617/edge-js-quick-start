@@ -24,5 +24,7 @@ jobs:
         run: npm i
       - name: Run Dotnet Build
         run: dotnet build src/QuickStart.sln
-      - name: Run
+      - name: Run with .NET core
         run: npm start
+        env:
+           EDGE_USE_CORECLR: 1
